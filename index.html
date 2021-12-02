@@ -1,40 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>HTML CSS JS</title>
-</head>
-<link rel="stylesheet" href="./style.css">
-<body>
-    
-<div class="wrapperroot">
-<div class="wrapper1"> 
-<h1 style="color: #5e9ca0;">Mr. or Ms.?</h1>
-<form class="form1" action="">
-      <label for="firstName" class="first-name">Name</label>
-      <input id="firstName" type="text">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS JS</title>
+  </head>
+  <link rel="stylesheet" href="./style.css" />
+  <body>
+    <div class="wrapperroot">
+      <div class="wrapper1">
+        <h1 style="color: #5e9ca0">Mr. or Ms.?</h1>
+        <form class="form1" action="">
+          <label for="firstName" class="first-name">Name</label>
+          <input id="firstNameinput" type="text" />
 
-      <label for="lastName" class="last-name">Male</label>
-      <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="lastName" class="last-name">Male</label>
+          <input type="radio" id="html1" name="fav_language" value="Male" />
 
-      <label for="job">Female</label>
-      <input type="radio" id="html" name="fav_language" value="HTML">
-
-      <button>Submit</button>
-      <button>save</button>
-    </form> 
-    
-</div>
-  <div class="wrapper2">
-  <h1 style="color: #5e9ca0;">prediction</h1>  
-  <h3 style="color: #5e9ca0;">Male</h1>    
-  <h3 style="color: #5e9ca0;">0.97</h1>  
-  <p>This is another paragra</p>
-  <button>Clear</button>  
+          <label for="job">Female</label>
+          <input type="radio" id="html2" name="fav_language" value="Female" />
+        </form>
+        <button id="SubmitButton">Submit</button>
+        <button id = "SaveButton">save</button>
+      </div>
+      <div class="wrapper2">
+        <h1 style="color: #5e9ca0">prediction</h1>
+        <h3 id="gender" style="color: #5e9ca0">Male</h3>
+        <h3 id="probability" style="color: #5e9ca0">0.97</h3>
+        <p>This is another paragra</p>
+        <button id="clearButton">Clear</button>
+      </div>
     </div>
-</div>
-  
-<script src="./scripts.js"> 
-
-</script>  
-</body>
+    <script src="./scripts.js"></script>
+  </body>
 </html>
