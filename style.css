@@ -1,0 +1,89 @@
+/* CSS styles */
+.wrapperroot{
+    display: grid;
+    grid-template-areas:
+    "wrapper1 wrapper2 "   
+  }
+  /* دو قسمت چپ و راست را به صورت گرید از هم جدا میکندwrapperroot*/
+  .wrapper2{
+      background: #C9C9C9;
+    border: 1px solid #c1c1c1;
+    margin: rem auto 0 auto;
+    max-width: 300px;
+    padding: 1em;  
+  }
+  /* کل بدنه ی قسمت سمت راست را در بر میگیرد و یک پهنا و بردر برای آن ست شده استwrapper2*/
+  form {
+    display: grid;
+    grid-gap: 3px;
+    padding: 1em;
+    background: #C9C9C9;
+    border: 1px solid #c1c1c1;
+    margin: rem auto 0 auto;
+    max-width: 300px;
+    padding: 1em;
+  }
+  /* بدنه ی فرم را در بر میگیرد و به صورت گرید ست شده و نمایش میدهد یک رنگ بک گراند انتخاب شده و یک بردر برای آن ست شده و یک عرض ماکزیمم 300 برای آن در نظر گرفته شده  wrapper2*/
+  form input {
+    background: #FFC;
+    border: 1px solid #9F9F9F;
+  }
+  
+  button {
+    background: lightgrey;
+    padding: 0.9em;
+    border-radius: 100px;
+    width: 30%;
+    border: 10px;
+  }
+  /*  برای ست کردن مشخصات ظاهری دکمه ی قسمت سمت راست در نظر گرفته شده است BUTTON*/
+  button:hover {
+  
+    background: gold;
+  }
+  
+  form button {
+    background: lightgrey;
+    padding: 0.8em;
+    border-radius: 100px;
+    width: 50%;
+    border: 10px;
+  }
+  
+  /*  برای ست کردن مشخصات ظاهری دو دکمه ی سمت چپ در نظر گرفته شده است  Form BUTTON*/
+  form button:hover {
+  
+    background: gold;
+  }
+  
+  /*  برای ست کردن رنگ پشت زمینه دکمه های سمت چپ در نظر گرفته شده است که وقتی موس روی آن میاید چه رنگی شود  Form BUTTON:hover*/
+  
+  label {
+    padding: 0.3em 0.5em 0.3em 0;
+  }
+  
+  input {
+    padding: 0.7em;
+    margin-bottom: 0.4rem;
+    border-radius: 100px;
+  }
+  
+  /*  برای ست کردن مشخصات ظاهری تکست فیلدی است که میخواهیم از کاربر اطلاعات را بخوانیم  input*/
+  input:focus {
+    outline: 3px solid gold;
+  }
+  
+  @media (min-width: 400px) {
+    form {
+      grid-template-columns: 100px 1fr;
+      
+    }
+    label {
+      text-align: right;
+      grid-column:  1/ 2;
+    }
+    input,
+    button {
+      grid-column: 2 / 3;
+    }
+  }
